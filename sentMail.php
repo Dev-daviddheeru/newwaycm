@@ -2,10 +2,10 @@
 require 'vendor/autoload.php';
 
 
-$apiKey =  "9e67dd82528b5ca2adfcfddf18b034bb-6df690bb-6dcca5f4"; //"6330469044e3b3833cfeba4d335752a6-da554c25-cd0cccf0";
-$domain =   "sandbox52f8b6b59e5d489ab73e22aa57d0c9c1.mailgun.org"; //"newwaycm.com";
+$apiKey =  "6330469044e3b3833cfeba4d335752a6-da554c25-cd0cccf0";
+$domain =   "newwaycm.com";
 $toEmail = "dkmtime440@gmail.com";
-$fromEmail = "postmaster@sandbox52f8b6b59e5d489ab73e22aa57d0c9c1.mailgun.org"; //"postmaster@newwaycm.com";
+$fromEmail = "postmaster@newwaycm.com";
 // Initialize Mailgun client
 $url = "https://api.mailgun.net/v3/$domain/messages";
 
@@ -16,9 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $email = $_POST['email'];
         $subject = $_POST['subject'];
         $message = $_POST['message'];
-
-
-
         // Create the email content
         $body = "You have received a new message from the contact form:\n\n";
         $body .= "Name: $name\n";
