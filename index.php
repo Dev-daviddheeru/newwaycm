@@ -17,7 +17,7 @@ if (isset($_GET['status'])) {
 } else {
   $notification = '';
 }
-// header("Location: index.php");
+// header("Location: index");
 ?>
 
 <head>
