@@ -16,6 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $email = $_POST['email'];
         $subject = $_POST['subject'];
         $message = $_POST['message'];
+
         // Create the email content
         $body = "You have received a new message from the contact form:\n\n";
         $body .= "Name: $name\n";
@@ -40,16 +41,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Execute cURL request
         $result = curl_exec($ch);
         $httpStatus = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-        curl_close($ch);
 
-        // Handle response
         if ($httpStatus != 200) {
-            $errorMsg = $curlError ?: $result;
-            throw new Exception("Error sending message: " . htmlspecialchars($errorMsg));
+            $curlError = curl_error($ch);
+            throw new Exception("Error sending message: " . htmlspecialchars($curlError ?: $result));
         }
 
+        curl_close($ch);
+
         // Redirect on success
-        header("Location: index?status=success");
+        header("Location: index.php?status=success");
         exit;
     } catch (Exception $e) {
         // Display error message
