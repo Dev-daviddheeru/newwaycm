@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
 
         // Redirect on success
-        header("Location: index.php?status=success");
+        header("Location: index?status=success");
         exit;
     } catch (Exception $e) {
         // Display error message

@@ -25,7 +25,7 @@
                 <h1 class="banner-title">Service</h1>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Services</a></li>
                   </ol>
                 </nav>
@@ -209,7 +209,7 @@
             <div class="col-md-6">
               <div class="footer-menu text-center text-md-right">
                 <ul class="list-unstyled">
-                  <li><a href="index.php">Home</a></li>
+                  <li><a href="index">Home</a></li>
                   <li><a href="#">About</a></li>
                   <li><a href="#">Services</a></li>
                   <li><a href="#">Vision</a></li>

@@ -26,13 +26,13 @@
       <div id="navbar-collapse" class="collapse navbar-collapse">
         <ul class="navbar-nav  container ">
           <li class="nav-item  active">
-            <a href="index.php" class="nav-link ">Home</a>
+            <a href="index" class="nav-link ">Home</a>
           </li>
           <li class="nav-item ">
-            <a href="project.php" class="nav-link ">Projects</a>
+            <a href="project" class="nav-link ">Projects</a>
           </li>
           <li class="nav-item ">
-            <a href="services.php" class="nav-link ">Services</a>
+            <a href="services" class="nav-link ">Services</a>
           </li>
           <li class="nav-item ">
             <a href="#" class="nav-link disabled">Vision</a>
@@ -41,7 +41,7 @@
             <a href="#" class="nav-link disabled">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.php ">Contact</a>
+            <a class="nav-link" href="contact">Contact</a>
           </li>
         </ul>
     </nav>
