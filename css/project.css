@@ -1,0 +1,49 @@
+/* project section style start here */
+.project-slide-image{
+    width: 100%;
+    height: auto;
+}
+.project-main-heading{
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.project-main-para{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 16px;
+    color: #555555;
+}
+.project-subheading{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 19px;
+    margin-bottom: 16px;
+    color: #303030;
+}
+.project-subpara{
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-bottom: 16px;
+    color: #555555;
+}
+.project-button{
+    text-decoration: none;
+    background-color: #dc143c;
+    color: white;
+    font-size: 12px;
+    font-weight: 900;
+    padding: 8px 20px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
+}
+.project-button:hover{
+    background-color: #23282D;
+    text-decoration: none;
+    color: white;
+}
+/* project section style end here */
